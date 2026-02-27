@@ -1,0 +1,98 @@
+# OpenClaw specific - exclude sensitive files
+.env
+.env.*
+*.env
+*.secret
+*.key
+*.pem
+
+# Credentials and tokens
+**/*credential*
+**/*token*
+**/*secret*
+**/*password*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+
+# Data files
+*.csv
+*.json
+*.xml
+*.yaml
+*.yml
+
+# Documentation (generated)
+docs/_build/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment specific
+config.local.js
+local.env
+
+# Project specific
+*.skill
+dist/
+build/
+.cache/
+
+# Keep sensitive templates
+!assets/template/*
+!references/**/
+
+# Shell scripts that should be reviewed
+*.sh
+!scripts/*.py
